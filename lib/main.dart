@@ -11,7 +11,7 @@ import 'package:image_picker/image_picker.dart';
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
-
+ 
 }
 
 class MyApp extends StatelessWidget {
