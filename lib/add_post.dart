@@ -190,7 +190,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
                   try{
 
                     int date = DateTime.now().microsecondsSinceEpoch ;
-                    firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref('/flutter_blog$date');
+                    firebase_storage.Reference ref = firebase_storage.FirebaseStorage.instance.ref('/Blo$date');
                     UploadTask uploadTask = ref.putFile(_image!.absolute);
                     await Future.value(uploadTask);
                     var newUrl = await ref.getDownloadURL();
